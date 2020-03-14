@@ -4,10 +4,18 @@ body{
 .btn{
     cursor: pointer;
 }
-h1{
+body{
     color: #778beb;
-    transition: 0.5s ease-in-out;
 }
 .clicked{
     color: #3dc1d3;
+}
+
+.form,
+.greetings{
+    display: none;
+}
+
+.showing{
+    display: block;
 }

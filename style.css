@@ -1,32 +1,31 @@
 body{
     overflow: hidden; 
-    background-color: #ecf0f1;
+    background-color: #000;
     margin: 0;
     padding: 0;
+    color: #fff;
+    text-align: center;
 }
 button{
     cursor: pointer;
     background: none;
     border: none;
-    color: #fff;
+    color: red;
     font-weight: bold;
-}
-body{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    font-size: 20px;
 }
 ul{
-    bottom: 50px;
-    width: auto;
-    margin: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25px;
+    width: 300px;
     padding: 0;
+    font-weight: lighter;
 }
 li{
     width: 100%;
-    padding-top: 5px;
+    padding-top: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,19 +34,43 @@ li span{
     display: list-item;
 }
 input{
+    background: none;
     border: none;
-    border-radius: 10px;
+    border-bottom: 1.5px solid #fff;
+    color: #fff;
     width: 250px;
     height: 30px;
-    margin-top: 20px;
-    padding-left: 20px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 0.9rem;
+    animation: fadeIn 0.5s linear;
 }
-.js-clock,
+input:focus{outline: none;}
+h1,h3,h4{
+    margin: 0;
+}
+.input-text{
+    font-size: 2rem;
+    animation: fadeIn 0.5s linear;
+    font-weight: lighter;
+}
+.js-clock{
+    font-size: 4rem;
+    text-shadow: 4px 3px 2px black;
+}
 .js-greetings{
     text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.js-weather{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.js-toDoText, .js-toDoForm{
+    visibility: hidden;
 }
 .clicked{
     color: #3dc1d3;

@@ -20,7 +20,7 @@ body{
 }
 ul{
     bottom: 50px;
-    width: 200px;
+    width: auto;
     margin: 20px;
     padding: 0;
 }

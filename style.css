@@ -22,6 +22,7 @@ ul{
     width: 300px;
     padding: 0;
     font-weight: lighter;
+    display: none;
 }
 li{
     width: 100%;
@@ -34,19 +35,25 @@ li span{
     display: list-item;
 }
 input{
-    background: none;
+    background: rgb(255, 255, 255, 0.6);
     border: none;
-    border-bottom: 1.5px solid #fff;
+    border-radius: 20px;
     color: #fff;
     width: 250px;
     height: 30px;
-    margin: 10px;
+    margin-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 0.9rem;
     animation: fadeIn 0.5s linear;
+    transition: 0.5s;
 }
-input:focus{outline: none;}
+input:focus{
+    outline: none;
+    background-color: #000;}
+input:hover{
+    background-color: #000;
+}
 h1,h3,h4{
     margin: 0;
 }
@@ -56,13 +63,14 @@ h1,h3,h4{
     font-weight: lighter;
 }
 .js-clock{
-    font-size: 4rem;
+    font-size: 50px;
     text-shadow: 4px 3px 2px black;
 }
 .js-greetings{
     text-align: center;
     font-size: 2.5rem;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 .js-weather{
     position: absolute;
@@ -70,7 +78,7 @@ h1,h3,h4{
     top: 20px;
 }
 .js-toDoText, .js-toDoForm{
-    visibility: hidden;
+    display: none;
 }
 .clicked{
     color: #3dc1d3;

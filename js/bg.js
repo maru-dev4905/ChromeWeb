@@ -2,7 +2,7 @@ const body = document.querySelector("body");
 const view = document.querySelector(".view-wallpaper");
 const main = document.querySelector("main");
 
-const IMG_NUMBER = 7;
+const IMG_NUMBER = 6;
 
 view.addEventListener("mouseover",function(){
     main.style.backgroundColor = 'rgba(0,0,0,0)';
